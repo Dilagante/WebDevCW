@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .footer a {
+            color: #f8f8f8;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social {
+            margin-top: 10px;
+        }
+        .footer .social a {
+            margin: 0 15px;
+            font-size: 20px;
+        }
+        .footer .copyright {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .footer-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .footer-logo {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="/images/LogoHorizontal.png" alt="Logo" class="footer-logo">
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Your Company. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

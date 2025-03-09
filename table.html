@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Life Below Water</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+    <style>
+
+
+        .targetpics, .tabledescpics {
+            height: 100px;
+            transition: 300ms;
+            margin: 5px;
+            box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+        }
+
+        .targetpics:hover, .tabledescpics:hover {
+            transform: scale(1.1);
+        }
+
+        .tabledescpics{
+            height:200px;
+            margin-top: 10px;
+            border-radius: 20px;
+            border-width: 3px;
+            border-color: rgb(153, 140, 211);
+            border-style: solid;
+        }
+
+        .tableheading {
+            font-weight: 550;
+        }
+
+        .tooltipdiv {
+            position: relative;
+            display: inline-block;
+            text-decoration: underline dotted 2px;
+            }
+
+        .tooltipcontent {
+            font-size: smaller;
+        }
+
+        .tooltipdiv .tooltipcontent {
+            visibility: hidden;
+            opacity: 0;
+            width: 220px;
+            margin-left: -105px;
+            background-color: rgba(11, 12, 55, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            bottom: 105%;
+            left: 50%;
+            font-weight: lighter;
+            transition: opacity 500ms;
+            position: absolute;
+            z-index: 1;
+        }
+
+        
+        .tooltipdiv:hover .tooltipcontent {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tableheadrow {
+            background-color: aqua;
+        }
+
+        .tablerowA{
+            background-color: rgb(212, 244, 244);
+        }
+
+        .tablerowB{
+            background-color: rgb(153, 215, 215);
+        }
+
+        @media screen and (max-width: 992px) {
+            .tabledescpics{
+                height: 100px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+    <div class="header">
+        <a href="./home.html"><img src="./images/Logo.png" class="logo"></a>
+        <ul class="navbarul">
+            <li class="navbarlink"><a href="cat" class="headerlink">Information</a></li>       
+            <li class="navbarlink"><a href="cat" class="headerlink">Volunteer</a></li>
+            <li class="navbarlink"><a href="cat" class="headerlink">Meet the Team</a></li>
+            <li class="navbarlink"><a href="cat" class="headerlink">Articles</a></li>
+            <li class="navbarlink"><a href="cat" class="headerlink">Profile</a></li>
+        </ul>
+    </div>
+    </header>
+    
+    <div class="headerborder">
+        <p></p>
+    </div>
+    <main>
+
+
+        <div class="topsect">
+
+            <h1 style="padding-top: 10px;">SDG 14 SUB-GOALS</h1>
+            <h2 style="margin-top: -65px;">The Individual Goals set by the UN to drive us towards sustainable ocean life</h2>
+
+        </div>
+
+        <div class="wrapper">
+            <div style="text-align: center">
+
+            <table class="mytable">
+                <caption><i><sub>Click the images to learn more!</sub></i></caption>
+                <tr class="tableheadrow">
+                    <th>
+                        <div class="tooltipdiv">
+                        Target
+                        <span class="tooltipcontent">Sub-Target Number</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="tooltipdiv">
+                            Sub-Goal<span class="tooltipcontent">Target Title</span>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="tooltipdiv">
+                        Description<span class="tooltipcontent">Extra Details about the Target</span>
+                    </div>
+                    </th>
+                    <th>
+                        <div class="tooltipdiv">
+                            Steps<span class="tooltipcontent">Steps to Achieve targets</span>
+                        </div>
+                    </th>
+                    <th><div class="tooltipdiv">
+                        Target Indicators<span class="tooltipcontent">Indicators of the progress of Targets</span>
+                    </div>
+                </th>
+                </tr>
+
+                <tr class="tablerowA">
+                    <td class="tableheading">14.1</td>
+                    <td class="tableheading">
+                        Reduce Marine Pollution<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.1.png" class="targetpics">
+                            <span class="tooltipcontent">Marine Pollution is directly harmful to Ocean Life</span>
+                        </div>
+                    </td>
+                    <td>Prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution</td>
+                    <td>Implement Waste Management Systems and Reduce Plastic Usage</td>
+                    <td rowspan="2">Floating Plastic debris density in protected ecosystems<br><a href="https://theoceancleanup.com/ocean-plastic-pollution-explained/" target="_blank"><img src='./images/14.1pic.jpg' class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowB">
+                    <td class="tableheading">14.2</td>
+                    <td class="tableheading">
+                        Protect and Restore Ecosystems<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.2.png" class="targetpics">
+                            <span class="tooltipcontent">Ocean Life is threatened by the destruction of natural ecosystems</span>
+                        </div>
+                    </td>
+                    <td>Sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration in order to achieve healthy and productive oceans</td>
+                    <td>Enhance ocean monitoring and support climate change mitigation<br></td>
+                </tr>
+
+                <tr class="tablerowA">
+                    <td class="tableheading">14.3</td>
+                    <td class="tableheading">
+                        Reduce Ocean Acidification<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.3.png" class="targetpics">
+                            <span class="tooltipcontent">Acidification affects not only Marine Life, but us as well</span>
+                        </div>
+                    </td>
+                    <td>Minimize and address the impacts of ocean acidification, including through enhanced scientific cooperation at all levels</td>
+                    <td>Enhance ocean monitoring and support climate change mitigation</td>
+                    <td>Average marine acidity measured at agreed suite of representative sampling stations<br><a href="https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification" target="_blank"><img src="./images/14.2pic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowB">
+                    <td class="tableheading">14.4</td>
+                    <td class="tableheading">
+                        Sustainable Fishing<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.4.png" class="targetpics">
+                            <span class="tooltipcontent">Sustainable Fishing is key to ensuring the health of our home</span>
+                        </div>
+                    </td>
+                    <td>Effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics</td>
+                    <td>Implement Fishing limits and promote eco-labeling</td>
+                    <td>Proportion of Fish Stocks in biologically sustainable levels<br><a href="https://www.msc.org/what-we-are-doing/our-approach/what-is-sustainable-fishing" target="_blank"><img src="./images/14.4pic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowA">
+                    <td class="tableheading">14.5</td>
+                    <td class="tableheading">
+                        Conserve Coastal and Marine Areas<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.5.png" class="targetpics">
+                            <span class="tooltipcontent">Conservation is the cornerstone of any sustainability project</span>
+                        </div>
+                    </td>
+                    <td>Conserve at least 10 per cent of coastal and marine areas, consistent with national and international law and based on the best available scientific information</td>
+                    <td>Expand Marine protected areas and engage local communities</td>
+                    <td>Coverage of protected areas in relation to marine areas<br><a href="https://www.30x30.solutions/coastal-marine/" target="_blank"><img src="./images/14.5pic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowB">
+                    <td class="tableheading">14.6</td>
+                    <td class="tableheading">
+                        End Subsidies Contributing to Overfishing<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.6.png" class="targetpics">
+                            <span class="tooltipcontent">Eradicate incentive to fish unsustainably</span>
+                        </div>
+                    </td>
+                    <td>Prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from introducing new such subsidies, recognizing that appropriate and effective special and differential treatment for developing and least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation</td>
+                    <td>Implement monitoring to minimize over-fishing</td>
+                    <td>Progress by countries in the degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing<br><a href="https://www.iisd.org/articles/25-reasons-wto-stop-funding-overfishing" target="_blank"><img src="./images/14.6pic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowA">
+                    <td class="tableheading">14.A</td>
+                    <td class="tableheading">
+                        Increase Scientific Knowledge, Research and Technology for Ocean Health<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.A.png" class="targetpics">
+                            <span class="tooltipcontent">Knowledge is Power</span>
+                        </div>
+                    </td>
+                    <td>Increase scientific knowledge, develop research capacity and transfer marine technology, taking into account the Intergovernmental Oceanographic Commission Criteria and Guidelines on the Transfer of Marine Technology, in order to improve ocean health and to enhance the contribution of marine biodiversity to the development of developing countries, in particular small island developing States and least developed countries</td>
+                    <td>Fund Oceanographic Research and develop marine technology</td>
+                    <td>Proportion of total research budget allocated to research in the field of marine technology<br><a href="https://www.wri.org/insights/how-ocean-health-affects-human-health" target="_blank"><img src="./images/14.Apic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowB">
+                    <td class="tableheading">14.B</td>
+                    <td class="tableheading">
+                        Support Small Scale Fishers<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.B.png" class="targetpics">
+                            <span class="tooltipcontent">SDG 10 is reduce inequalities!</span>
+                        </div>
+                    </td>
+                    <td>Provide access for small-scale artisanal fishers to marine resources and markets</td>
+                    <td>Provide Training Programs and improve market access</td>
+                    <td>Progress by countries in the degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small-scale fisheries<br><a href="https://sustainablefish.org/impact-initiatives/supporting-small-scale-fisheries/" target="_blank"><img src="./images/14.bpic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+                <tr class="tablerowA">
+                    <td class="tableheading">14.C</td>
+                    <td class="tableheading">
+                        Implement and Enforce International Sea Law<br>
+                        <div class="tooltipdiv">
+                            <img src="./images/targets/14.C.png" class="targetpics">
+                            <span class="tooltipcontent">Legal Protections may be enacted by enforcement is just as important</span>
+                        </div>
+                    </td>
+                    <td>Enhance the conservation and sustainable use of oceans and their resources by implementing international law as reflected in UNCLOS, which provides the legal framework for the conservation and sustainable use of oceans and their resources</td>
+                    <td>Develop international agreements and enhance enforcement mechanisms</td>
+                    <td>Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nation Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources<br><a href="https://www.imo.org/en/ourwork/legal/pages/unitednationsconventiononthelawofthesea.aspx" target="_blank"><img src="./images/14.cpic.jpg" class="tabledescpics"></a></td>
+                </tr>
+
+            </table>
+            </div>
+            <div>
+
+            <p style="text-align: left; color: black;">
+                <br>
+                <b><i>References</i></b>
+                <ul>
+                    <li><a href="https://iesl.lk/SLEN/57/SDG.php" style="text-align: left;" target="_blank">The Institution of Engineers Sri Lanka</a></li>
+                    <li><a href="https://sdgs.un.org/2030agenda" style="text-align: left;" target="_blank">UN 2030 Agenda</a></li>
+                </ul>
+            </p>
+
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <a href="/home.html"><img src="./images/LogoHorizontal.png" class="footerlogo"></a>
+            </div>
+            <div style="padding-top: 10px;">
+                <p class="footertext">Articles</p>
+                <ul>
+                    <li class="footerli">Article 1</li>
+                    <li class="footerli">Article 2</li>
+                    <li class="footerli">Article 3</li>
+                    <li class="footerli">Article 4</li>
+                </ul>
+            </div>
+            <div class="footeritems">
+                <p class="footertext">This Page's Editor</p>
+                <p class="footertext">This Page's Validation</p>
+                <p class="footertext">Sitemap</p>
+            </div>
+            <div  class="footeritems">
+                <p class="footertext">Table Item</p>
+                <p class="footertext">Meet The Team</p>
+                <p class="footertext">Feedback Form</p>
+            </div>
+            <div>
+                <img src="/images/preserve.png" class="footerlogo">
+            </div>
+            </div>
+            <div style="text-align: center;">
+                <p style="color: aliceblue; font-size: 15px; margin: 4px;">Made with 💝 by the Fishy Team</p>
+            </div>
+    
+    
+        </div>
+        </footer>
+
+</body>
+</html>
