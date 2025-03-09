@@ -1,18 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <title>Life Below Water</title>
         <link rel="stylesheet" href="style.css">
         <!--Favicon-->
         <link rel="icon" type="image/x-icon" href="/images/Logo.png">
         <style>
+            /*Mission Subsection*/
             #missionsubheading {
                 color: aliceblue;
                 text-align: center;
                 margin-top: 30px;
                 line-height: 40px;
             }
+            /*Post Subsection*/
+            #postssect {
+                padding-left: 50px;
+                padding-right: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #1f1f3f;
+                background: linear-gradient(to bottom, #003555, #002136);
+                border-style: solid;
+                border-top-width: 5px;
+            }
+            /*Indiviual Post Sizing and animation setup*/
+            .post {
+                width: 550px;
+                height: 250px;
+                background-color: transparent;
+                margin-bottom: 60px;
+                display: flex;
+                border-radius: 20px;
+                perspective: 1000px;
+            }
+            /*Sub-div for posts*/
+            .postcard {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.7s;
+                transform-style: preserve-3d;
+            }
+            /*Animation for Posts*/
+            .post:hover .postcard {
+                transform: rotateY(180deg);
+            }
+            /*Positioning for Front and Back of Post Cards*/
+            .postfront, .postback {
+                display: flex;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                border-radius: 20px;
+                background: linear-gradient(to left, #1f1f3f, #2a265e, #1d1a3d);
+
+            }
+            
+            /*Rotate Back of Post*/
+            .postback {
+                transform: rotateY(180deg);
+            }
+
+            /*Create Wrapped Flex*/
+            .postrow {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+
+            /*Thumbnail for back of Post Card*/
+            .postthumb {
+                height: 200px;
+                width: 200px;
+                margin-left: 25px;
+                margin-top: 25px;
+                border-radius: 10px;
+            }
+
+            /*Text for Post Card*/
+            .posttext {
+                color: aliceblue;
+                margin: 25px;
+                height: 200px;
+                width: 550px;
+                align-content: center;
+                text-align: center;
+                font-size: 25px;
+
+            }
+
+            /*Sizing for logo in heading*/
+            #topsectlogo {
+                height: 150px;
+                padding-top: 50px;
+                margin-bottom: -1vw;
+            }
+
+            /*Mission Subsection Sizing*/
+            #mission {
+                height: 366px;
+                background: #0f0c29;
+                background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+                box-shadow: rgba(13, 13, 43, 0.4) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+
         </style>
 
     </head>
@@ -25,13 +120,15 @@
                 <a href="/home.html"><img src="./images/Logo.png" alt="The text Life Below Water inside a waterdrop" class="logo"></a>
 
                 <!--Navbar-->
-                <ul class="navbarul">
+                <div class="navbarul" style="vertical-align: middle;">
+                    <ul style="margin-top: auto; margin-bottom: auto">
                     <li class="navbarlink"><a href="./volunteer.html" class="headerlink">Volunteer</a></li>       
                     <li class="navbarlink"><a href="./table.html" class="headerlink">Table</a></li>
                     <li class="navbarlink"><a href="./feedback.html" class="headerlink">Feedback</a></li>
                     <li class="navbarlink"><a href="./team.html" class="headerlink">Meet the Team</a></li>
-                    <a href="./profile.html"><img src="./images/pfp.png" alt="User Profile Picture"class="profilelink"></a>
                 </ul>
+                <a href="./profile.html"><img src="./images/pfp.png" alt="User Profile Picture" class="profilelink"></a>
+            </div>
             </div>
         </header>
 
@@ -159,12 +256,12 @@
 
                 <!--Footer Content Links-->
                 <div style="padding-top: 10px;">
-                    <p class="footertext" style="font-size: large; margin-bottom: -15px">Articles</p>
+                    <p class="footertext" style="font-size: large; margin-bottom: -15px; color: aliceblue;">Articles</p>
                     <ul>
-                        <a href="./content_ST1" class="footerlink"><li class="footerli">Article 1</li></a>
-                        <a href="./content_ST2" class="footerlink"><li class="footerli">Article 2</li></a>
-                        <a href="./content_ST3" class="footerlink"><li class="footerli">Article 3</li></a>
-                        <a href="./content_ST4" class="footerlink"><li class="footerli">Article 4</li></a>
+                        <li class="footerli"><a href="./content_ST1" class="footerlink">Article 1</a></li>
+                        <li class="footerli"><a href="./content_ST2" class="footerlink">Article 2</a></li>
+                        <li class="footerli"><a href="./content_ST3" class="footerlink">Article 3</a></li>
+                        <li class="footerli"><a href="./content_ST4" class="footerlink">Article 4</a></li>
                     </ul>
                 </div>
 
