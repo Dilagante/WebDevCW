@@ -1,219 +1,229 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Life Below Water</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
-    <style>
-        .topsect{
-            background-image: url('./images/oceanfog.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50% 55%;
-            height: 400px;
-        }
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Life Below Water</title>
+        <link rel="stylesheet" href="style.css">
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+        <style>
+            .topsect{
+                background-image: url('./images/oceanfog.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 55%;
+                height: 400px;
+            }
 
-    </style>
-    <script src="./script.js"></script>
+        </style>
+        <!--Script for smooth return-to-top and button opacity based on position-->
+        <script src="./script.js"></script>
 
-</head>
-<body>
-    <header>
-        <div class="header">
-            <a href="/home.html"><img src="./images/Logo.png" class="logo"></a>
-            <ul class="navbarul">
-                <li class="navbarlink"><a href="./volunteer.html" class="headerlink">Volunteer</a></li>       
-                <li class="navbarlink"><a href="./table.html" class="headerlink">Table</a></li>
-                <li class="navbarlink"><a href="./feedback.html" class="headerlink">Feedback</a></li>
-                <li class="navbarlink"><a href="./team.html" class="headerlink">Meet the Team</a></li>
-                <a href="./profile.html"><img src="./images/pfp.png" class="profilelink"></a>
-            </ul>
-            </div>
+    </head>
 
-        <div class="headerborder">
-            <p></p>
-        </div>
-    </header>
-    
-    <div class="headerborder">
-        <p></p>
-    </div>
+    <body>
+        <!--Header-->
+        <header>
+            <div class="header">
 
+                <!--Top Left Logo-->
+                <a href="/home.html"><img src="./images/Logo.png" alt="The text Life Below Water inside a waterdrop" class="logo"></a>
 
-
-    <img id="totop" src="./images/totop.png" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
-
-
-
-
-    <main>
-
-
-        <div class="topsect" style="height: 350px;">
-
-            <h1 style="padding-top:0">Ocean Acidification</h1>
-            <h2 style="margin-top: -7vw;">A Silent Killer for Marine Life and all Inhabitants of this Planet</h2>
-
-        </div>
-
-        <div class="wrapper">
-            <div class="contents">
-                <p style="font-size: 19px; text-indent: 25px; margin-bottom: -8px;"><b>Contents</b></p>
-                <ol style="font-style: italic;">
-                    <li><a href="#OceanAcidification">What does Ocean Acidification Mean?</a></li>
-                    <li><a href="#CausesOfAcidification">Causes of Ocean Acidification</a></li>
-                    <li><a href="#ImpactOnMarineLife">The Impact on Marine Life</a></li>
-                    <ol class="subol">
-                        <li><a href="#Calcifying">Calcifying Organisms</a></li>
-                        <li><a href="#Larval">Larval Development</a></li>
-                        <li><a href="#Ecosystem">Ecosystem Disruption</a></li>
-                    </ol>
-                    <li><a href="#ImpactOnHumanHealth">The Impact on Human Health</a></li>
-                    <ol class="subol">
-                        <li><a href="#Seafood">Seafood Availability and Quality</a></li>
-                        <li><a href="#Toxicity">Toxicity and Contaminants</a></li>
-                    </ol>
-                    <li><a href="#Mitigation">The Steps to avoid an Acid-Filled Future</a></li>
-                    <ol class="subol">
-                        <li><a href="#ReduceCO2">Reducing CO2 Emissions</a></li>
-                        <li><a href="#Conservation">Support Marine Conservation</a></li>
-                        <li><a href="#Research">Research and Monitoring</a></li>
-                    </ol>
-                </ol>
-            </div>
-            <hr>
-
-            <div>
-                
-                <h3 id="OceanAcidification">What Does Ocean Acidification Mean?</h3>
-
-                <p class="articletext">Ocean Acidification, the silent threat to Marine life and Human health, refers to the issue of decreasing pH levels in marine areas, which causes significant threats to the ecosystem and our well-being. In this article, we will go over the causes of Acidification, the impact it has on marine life and human health, as well as the strategies we can adopt to mitigate this rising issue.</p>
-                
-                <hr>
-                <h3 id="CausesOfAcidification">Causes of Ocean Acidification</h3>
-                <p class="articletext">
-                    It will come as a surprise to no one that Ocean Acidification is directly linked to the industrialization of the planet caused by us. With the increase in human activities such as burning fossil fuels, deforestation, and the destruction of coral reefs.
-                    Since the Industrial Revolution in the 1700s, the ocean’s surface pH level has decreased by approximately 0.1 units, but it is projected to decrease by 0.3-0.4 more units by the end of this century.
-                    If this change seems small, please refer to <a href="https://www.epa.gov/goldkingmine/what-ph" target="_blank">this explanation</a> of the pH scale.
-                <figure style="text-align: center;">
-                    <img src="./images/phscalewikimedia.png"  style="max-width: 90%; height: auto;">
-                    <figcaption><sup>Fig.1 - PH Scale - <a href="https://commons.wikimedia.org/wiki/File:PH_Scale-_Acidic_vs._Basic_%28Alkaline%29.png" target="_blank">Wikimedia Commons</a></sup></figcaption>
-                </figure>
-                In short, the pH scale is a logarithmic scale from 0 to 14 that represents the acidity or basicity of aqueous solutions, with 7 representing neutral solutions that are neither acidic nor basic.
-                The average ocean pH was 8.2 prior to the Industrial Revolution, with a value of around 8.1 at present. 
-                </p>
-
-                <hr>
-                
-                <h3 id="ImpactOnMarineLife">The Impact on Marine Life</h3>
-                <div class="sidebyside">
-                <div>
-                    <h4 id="Calcifying">Calcifying Organisms</h4>
-                    <p class="articletext">
-                        Many ocean species such as shellfish, corals, and some plankton rely on Calcium Carbonate to build their shells and skeletons.
-                        However, with the increase in acidity, the availability of free carbonate ions is reduced drastically, harming these organisms’ ability to form and maintain their shells.
-                        This leads to weakened shells, reduced growth rates, and overall increased mortality.
-                    </p>
-                    <h4 id="Larval">Larval Development</h4>
-                    <p class="articletext">The early stages of many marine organisms including fish and various invertebrates are particularly sensitive to changes in acidity, causing them to struggle to develop properly.
-                        This may seem inconsequential, but this can cause disruptions to the entire food chain.
-                    </p>
-                    <h4 id="Ecosystem">Ecosystem Disruption</h4>
-                    <p class="articletext">
-                        Ocean acidification can alter the composition of marine ecosystems, leading to changes in species distribution and abundance.
-                        This may have a domino effect on marine biodiversity and ecosystem resilience.
-                    </p>
-                </div>
-                <div>
-                    <figure>
-                        <img src="./images/crab.jpg" style="border-radius: 20px; max-width: 100%; height: auto;">
-                        <figcaption style="text-align: center; padding-left: 5px; padding-right: 5px;">This is Jim. Jim's Shell is weaker than it should be because of rising Acidity in Oceans.</figcaption>
-                    </figure>
-                </div>
-                </div>
-
-                <hr>
-                
-                <h3 id="ImpactOnHumanHealth">The Impact on Human Health</h3>
-                
-
-                <div class="sidebyside">
-                <figure>
-                    <img src="./images/fishies.jpg" height="300px" style="border-radius: 20px;">
-                </figure>
-                <div>
-                    <h4 id="Seafood">Seafood Availability and Quality</h4>
-                    <p class="articletext">
-                        Ocean Acidification can cause degradation in the quality and quantity of seafood, affecting the livelihoods of communities that are dependent on fishing, as well as the communities that rely on seafood as a primary source of protein.
-                        As an example, changes in the ocean’s chemistry can harm the levels on essential nutrients like omega-3 fatty acids in fish.
-                    </p>
-                    <h4 id="Toxicity">Toxicity and Contaminants</h4>
-                    <p class="articletext">Acidified waters may increase the availability of harmful substances such as heavy metals, leading to higher exposure for humans who consume contaminated seafood.</p>
-
-                </div>
-            </div>
-            <hr>
-                <h3 id="Mitigation">The Steps to avoid an Acid-Filled Future</h3>
-                <div class="sidebyside">
-                    <div>
-                    <h4 id="ReduceCO2">Reducing CO2 Emissions</h4>
-                    <p class="articletext">The most effective way to tackle ocean acidity is to reduce atmospheric CO2 levels by switching to renewable energy sources and implementing sustainable land-use practices.</p>
-                    <h4 id="Conservation">Support Marine Conservation</h4>
-                    <p class="articletext">Establishing and maintaining protected marine areas can help preserve biodiversity and support ecosystem resilience.</p>
-                    <h4 id="Research">Research and Monitoring</h4>
-                    <p>Continued Scientific research is essential to understand the effects of ocean acidification and developing effective strategies to adapt to a changing world.</p>
-                    <br class="articletext">
-                    </div>
-                    <figure>
-                        <img src="./images/seal.jpg" height="300px" style="border-radius: 20px;">
-                    </figure>
-                    </div>
-                    <hr>
-
-                    <p style="text-align: center;">Ocean Acidification is a single facet in the wide scope of Marine Conservation.
-                        If you’d like to learn more, take a look at our other articles and data sheets
-                        </p>
-            </div>
-
-        </div>
-        </main>
-
-    <footer>
-        <div class="footer">
-            <div>
-                <a href="/home.html"><img src="./images/LogoHorizontal.png" class="footerlogo"></a>
-            </div>
-            <div style="padding-top: 10px;">
-                <p class="footertext" style="font-size: large; margin-bottom: -15px">Articles</p>
-                <ul>
-                    <a href="./content_ST1" class="footerlink"><li class="footerli">Article 1</li></a>
-                    <a href="./content_ST2" class="footerlink"><li class="footerli">Article 2</li></a>
-                    <a href="./content_ST3" class="footerlink"><li class="footerli">Article 3</li></a>
-                    <a href="./content_ST4" class="footerlink"><li class="footerli">Article 4</li></a>
+                <!--Navbar-->
+                <ul class="navbarul">
+                    <li class="navbarlink"><a href="./volunteer.html" class="headerlink">Volunteer</a></li>       
+                    <li class="navbarlink"><a href="./table.html" class="headerlink">Table</a></li>
+                    <li class="navbarlink"><a href="./feedback.html" class="headerlink">Feedback</a></li>
+                    <li class="navbarlink"><a href="./team.html" class="headerlink">Meet the Team</a></li>
+                    <a href="./profile.html"><img src="./images/pfp.png" alt="User Profile Picture" class="profilelink"></a>
                 </ul>
             </div>
-            <div class="footeritems">
-                <a href="./pageEditor_ST2.html" class="footerlink"><p class="footertext">This Page's Editor</p></a>
-                <a href="./validation_ST2.html" class="footerlink"><p class="footertext">This Page's Validation</p></a>
-                <a href="./sitemap.html" class="footerlink"><p class="footertext">Sitemap</p></a>
+        </header>
+
+        <!--Scroll to Top Button-->
+        <img id="totop" alt="Arrow Pointing Up" src="./images/totop.png" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+
+        <main>
+            <!--Heading Section-->
+            <div class="topsect" style="height: 350px;">
+
+                <h1 style="padding-top:0">Ocean Acidification</h1>
+                <h2 style="margin-top: -7vw;">A Silent Killer for Marine Life and all Inhabitants of this Planet</h2>
+
             </div>
-            <div  class="footeritems">
-                <a href="./table.html" class="footerlink"><p class="footertext">Table</p></a>
-                <a href="./team.html" class="footerlink"><p class="footertext">Meet The Team</p></a>
-                <a href="./feedback.html" class="footerlink"><p class="footertext">Feedback Form</p></a>
+
+            <!--Wrapper to include Margins for main content-->
+            <div class="wrapper">
+
+                <!--Contents Pane-->
+                <div class="contents">
+                    <p style="font-size: 19px; text-indent: 25px; margin-bottom: -8px;"><b>Contents</b></p>
+                    <ol>
+                        <li><a href="#OceanAcidification">What does Ocean Acidification Mean?</a></li>
+                        <li><a href="#CausesOfAcidification">Causes of Ocean Acidification</a></li>
+                        <li><a href="#ImpactOnMarineLife">The Impact on Marine Life</a></li>
+                        <ol class="subol">
+                            <li><a href="#Calcifying">Calcifying Organisms</a></li>
+                            <li><a href="#Larval">Larval Development</a></li>
+                            <li><a href="#Ecosystem">Ecosystem Disruption</a></li>
+                        </ol>
+                        <li><a href="#ImpactOnHumanHealth">The Impact on Human Health</a></li>
+                        <ol class="subol">
+                            <li><a href="#Seafood">Seafood Availability and Quality</a></li>
+                            <li><a href="#Toxicity">Toxicity and Contaminants</a></li>
+                        </ol>
+                        <li><a href="#Mitigation">The Steps to avoid an Acid-Filled Future</a></li>
+                        <ol class="subol">
+                            <li><a href="#ReduceCO2">Reducing CO2 Emissions</a></li>
+                            <li><a href="#Conservation">Support Marine Conservation</a></li>
+                            <li><a href="#Research">Research and Monitoring</a></li>
+                        </ol>
+                    </ol>
+                </div>
+
+                <!--Line Divider-->
+                <hr>
+
+                <!--Start of Main Content-->
+                <div>
+                    <h3 id="OceanAcidification">What Does Ocean Acidification Mean?</h3>
+
+                    <p class="articletext">Ocean Acidification, the silent threat to Marine life and Human health, refers to the issue of decreasing pH levels in marine areas, which causes significant threats to the ecosystem and our well-being. In this article, we will go over the causes of Acidification, the impact it has on marine life and human health, as well as the strategies we can adopt to mitigate this rising issue.</p>
+                    
+                    <hr>
+                    <h3 id="CausesOfAcidification">Causes of Ocean Acidification</h3>
+
+                    <p class="articletext">
+                        It will come as a surprise to no one that Ocean Acidification is directly linked to the industrialization of the planet caused by us. With the increase in human activities such as burning fossil fuels, deforestation, and the destruction of coral reefs.
+                        Since the Industrial Revolution in the 1700s, the ocean’s surface pH level has decreased by approximately 0.1 units, but it is projected to decrease by 0.3-0.4 more units by the end of this century.
+                        If this change seems small, please refer to <a href="https://www.epa.gov/goldkingmine/what-ph" target="_blank">this explanation</a> of the pH scale.
+                        <!--Figure 1 - pH Scale-->
+                        <figure style="text-align: center;">
+                            <img src="./images/phscalewikimedia.png" alt="Description of the pH Scale" style="max-width: 90%; height: auto;">
+                            <figcaption><sup>Fig.1 - PH Scale - <a href="https://commons.wikimedia.org/wiki/File:PH_Scale-_Acidic_vs._Basic_%28Alkaline%29.png" target="_blank">Wikimedia Commons</a></sup></figcaption>
+                        </figure>
+                        In short, the pH scale is a logarithmic scale from 0 to 14 that represents the acidity or basicity of aqueous solutions, with 7 representing neutral solutions that are neither acidic nor basic.
+                        The average ocean pH was 8.2 prior to the Industrial Revolution, with a value of around 8.1 at present. 
+                    </p>
+
+                    <hr>
+                    <h3 id="ImpactOnMarineLife">The Impact on Marine Life</h3>
+
+                    <!--Sidebyside Class is a flex to allow for horizontal place of images-->
+                    <div class="sidebyside">
+                        <div>
+                            <h4 id="Calcifying">Calcifying Organisms</h4>
+                            <p class="articletext">
+                                Many ocean species such as shellfish, corals, and some plankton rely on Calcium Carbonate to build their shells and skeletons.
+                                However, with the increase in acidity, the availability of free carbonate ions is reduced drastically, harming these organisms’ ability to form and maintain their shells.
+                                This leads to weakened shells, reduced growth rates, and overall increased mortality.
+                            </p>
+                            <h4 id="Larval">Larval Development</h4>
+                            <p class="articletext">The early stages of many marine organisms including fish and various invertebrates are particularly sensitive to changes in acidity, causing them to struggle to develop properly.
+                                This may seem inconsequential, but this can cause disruptions to the entire food chain.
+                            </p>
+                            <h4 id="Ecosystem">Ecosystem Disruption</h4>
+                            <p class="articletext">
+                                Ocean acidification can alter the composition of marine ecosystems, leading to changes in species distribution and abundance.
+                                This may have a domino effect on marine biodiversity and ecosystem resilience.
+                            </p>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="./images/crab.jpg" alt="A Small Crab on a beach" style="border-radius: 20px; max-width: 100%; height: auto;">
+                                <figcaption style="text-align: center; padding-left: 5px; padding-right: 5px;">This is Jim. Jim's Shell is weaker than it should be because of rising Acidity in Oceans.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h3 id="ImpactOnHumanHealth">The Impact on Human Health</h3>
+                    
+                    <div class="sidebyside">
+                        <figure>
+                            <img src="./images/fishies.jpg" alt="Pile of Fish for sale" height="300px" style="border-radius: 20px;">
+                        </figure>
+                        <div>
+                            <h4 id="Seafood">Seafood Availability and Quality</h4>
+                            <p class="articletext">
+                                Ocean Acidification can cause degradation in the quality and quantity of seafood, affecting the livelihoods of communities that are dependent on fishing, as well as the communities that rely on seafood as a primary source of protein.
+                                As an example, changes in the ocean’s chemistry can harm the levels on essential nutrients like omega-3 fatty acids in fish.
+                            </p>
+                            <h4 id="Toxicity">Toxicity and Contaminants</h4>
+                            <p class="articletext">Acidified waters may increase the availability of harmful substances such as heavy metals, leading to higher exposure for humans who consume contaminated seafood.</p>
+
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h3 id="Mitigation">The Steps to avoid an Acid-Filled Future</h3>
+
+                    <div class="sidebyside">
+                        <div>
+                            <h4 id="ReduceCO2">Reducing CO2 Emissions</h4>
+                            <p class="articletext">The most effective way to tackle ocean acidity is to reduce atmospheric CO2 levels by switching to renewable energy sources and implementing sustainable land-use practices.</p>
+                            <h4 id="Conservation">Support Marine Conservation</h4>
+                            <p class="articletext">Establishing and maintaining protected marine areas can help preserve biodiversity and support ecosystem resilience.</p>
+                            <h4 id="Research">Research and Monitoring</h4>
+                            <p>Continued Scientific research is essential to understand the effects of ocean acidification and developing effective strategies to adapt to a changing world.</p>
+                            <br class="articletext">
+                        </div>
+                        <figure>
+                            <img src="./images/seal.jpg" alt="4 Seals on a beach" height="300px" style="border-radius: 20px;">
+                        </figure>
+                    </div>
+
+                    <hr>
+                    <p style="text-align: center;">Ocean Acidification is a single facet in the wide scope of Marine Conservation.
+                        If you’d like to learn more, take a look at our other articles and data sheets
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="./images/preserve.png" class="footerlogo">
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+
+                <!--Footer Logo-->
+                <div>
+                    <a href="/home.html"><img src="./images/LogoHorizontal.png" alt="The text Life Below Water next to a waterdrop" class="footerlogo"></a>
+                </div>
+
+                <!--Footer Content Links-->
+                <div style="padding-top: 10px;">
+                    <p class="footertext" style="font-size: large; margin-bottom: -15px">Articles</p>
+                    <ul>
+                        <a href="./content_ST1" class="footerlink"><li class="footerli">Article 1</li></a>
+                        <a href="./content_ST2" class="footerlink"><li class="footerli">Article 2</li></a>
+                        <a href="./content_ST3" class="footerlink"><li class="footerli">Article 3</li></a>
+                        <a href="./content_ST4" class="footerlink"><li class="footerli">Article 4</li></a>
+                    </ul>
+                </div>
+
+                <!--Footer Other Links-->
+                <div class="footeritems">
+                    <a href="./pageEditor_ST2.html" class="footerlink"><p class="footertext">This Page's Editor</p></a>
+                    <a href="./validation_ST2.html" class="footerlink"><p class="footertext">This Page's Validation</p></a>
+                    <a href="./sitemap.html" class="footerlink"><p class="footertext">Sitemap</p></a>
+                </div>
+
+                <div  class="footeritems">
+                    <a href="./table.html" class="footerlink"><p class="footertext">Table</p></a>
+                    <a href="./team.html" class="footerlink"><p class="footertext">Meet The Team</p></a>
+                    <a href="./feedback.html" class="footerlink"><p class="footertext">Feedback Form</p></a>
+                </div>
+
+                <!--Footer Secondary Logo-->
+                <div>
+                    <img src="./images/preserve.png" alt="Preserve the Blue, Protect the Earth" class="footerlogo">
+                </div>
             </div>
-            </div>
+
+            <!--Credits-->
             <div style="text-align: center; background-color: rgb(12, 12, 55); padding: 1px;">
                 <p style="color: aliceblue; font-size: 15px; margin: 4px;">Made with 💝 by the Fishy Team</p>
             </div>
-    
-    
-        </div>
         </footer>
-
-</body>
+    </body>
 </html>
