@@ -3,6 +3,18 @@
     src: url(./fonts/PottaOne-Regular.ttf);
 }
 
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
 .wrapper {
     background-color:rgb(241, 242, 237);
     height: fit-content;
