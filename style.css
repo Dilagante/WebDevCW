@@ -158,7 +158,7 @@ h4 {
 
 .postrow {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -190,7 +190,8 @@ h4 {
     width: 100%;
     border-bottom-style:solid;
     border-bottom-color: #141d5b;
-    z-index: 2;
+    z-index: 50;
+    display: table-cell;
 }
 
 
@@ -220,7 +221,7 @@ h4 {
     margin-bottom: -1vw;
 }
 
-.navbarlink, .profilelink {
+.navbarlink {
     display: inline;
     font-family: Poppins;
     font-weight: normal;
@@ -242,14 +243,6 @@ h4 {
     justify-content: space-between;
 }
 
-.profilelink {
-    background-color: rgb(11, 35, 82) ;
-}
-
-.profilelink:hover {
-    background-color:  rgb(1, 14, 41);
-}
-
 .navbarul {
     float: right;
     margin-right: 2%;
@@ -257,7 +250,31 @@ h4 {
     margin: 0px;
 }
 
+hr {
+    margin-top: 40px;
+}
+
+.profilelink {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 60px;
+    border-style: solid; 
+    border-color: black;
+    transition: 0.2s;
+    height: 67px;
+}
+
+.profilelink:hover {
+    border-color: #7d82a4;
+}
+
+
 .navbarlink:hover {
+    text-decoration: underline 3px rgba(255, 255, 255, 1);
+}
+
+.currentlink {
     text-decoration: underline 3px rgba(255, 255, 255, 1);
 }
 
@@ -270,14 +287,15 @@ a:visited {
     color: #551A8B;
 }
 
-.headerlink:link {
-    color: aliceblue;
+.headerlink {
     text-decoration: none;
+    vertical-align: middle;
 }
 
-.headerlink:visited {
+.headerlink:visited,.currentlink:visited {
     color: aliceblue;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 #mission {
@@ -359,6 +377,10 @@ table, th, td {
     font-size: 15px;
 }
 
+.footerlink {
+    text-decoration-color: aliceblue;
+}
+
 .footeritems {
     margin-top: auto;
     margin-bottom: auto;
@@ -370,7 +392,7 @@ table, th, td {
 }
 
 @media screen and (max-width: 992px) {
-    .navbarlink, .profilelink {
+    .navbarlink{
         font-size: 15px;
         padding: 15px;
         padding-top: 40px;
