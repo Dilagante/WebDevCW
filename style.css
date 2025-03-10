@@ -222,6 +222,7 @@ a:visited {
 /*Allow transition for underline*/
 .headerlink {
     text-decoration: none;
+    color: aliceblue;
 }
 
 /*Keep Visited Link Color on Header White*/
