@@ -20,7 +20,7 @@
 
 /*Apply Font to all Text*/
 *{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
 }
 
 /*Styles Applied to Entire Sheet*/
