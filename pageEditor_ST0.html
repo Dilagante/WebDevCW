@@ -10,37 +10,36 @@
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="/images/Logo.png">
     <style>
+        /*Font Face for H2*/
+        @font-face {
+            font-family: Poppins;
+            src: url(./fonts/Poppins-Regular.ttf);
+
+        }
+
+        /*Bold Font Face for H1*/
+        @font-face {
+            font-family: Poppins;
+            src: url(./fonts/Poppins-Bold.ttf);
+            font-weight: bold;
+        }
+
         body {
             background: rgb(197, 196, 214);
             background: linear-gradient(180deg, rgb(76, 104, 144) 0%, rgb(72, 72, 148) 35%, rgb(24, 60, 93) 100%);
+            font-family: "Poppins";
         }
+
 
         html {
             scroll-padding-top: 120px;
         }
 
-        .container {
-            display: flex;
-            flex-direction: row-reverse;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
         main {
             flex: 3;
         }
         aside {
-            flex: 1;
-            background-color: #f4f4f4;
-            padding: 15px;
-            border: 1px solid #ddd;
-            margin-right: 20px;
-        }
-        section {
             margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            background-color: #fafafa;
         }
 
 
@@ -195,9 +194,9 @@
 
         header, footer {
             padding: 0px;
-            
+
         }
-        
+
         .ref li{
             list-style: unset;
         }
