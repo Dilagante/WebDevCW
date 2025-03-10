@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - provide your student name</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <img id="totop" src="./images/totop.png" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+
+    <header>
+        <div class="header">
+            <a href="/home.html"><img src="./images/Logo.png" class="logo"></a>
+            <ul class="navbarul">
+                <li class="navbarlink"><a href="cat" class="headerlink">Information</a></li>
+                <li class="navbarlink"><a href="cat" class="headerlink">Volunteer</a></li>
+                <li class="navbarlink"><a href="cat" class="headerlink">Meet the Team</a></li>
+                <li class="navbarlink"><a href="cat" class="headerlink">Articles</a></li>
+                <li class="navbarlink"><a href="cat" class="headerlink">Profile</a></li>
+            </ul>
+            </div>
+
+        <div class="headerborder">
+            <p></p>
+        </div>
+    </header>
+
+    <section class="stud" style="margin-top: 100px; background-color: rgb(202, 202, 202);">
+        <h2 style="color: black;">DILHARA DE SILVA | STUDENT 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="home">Home Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The header was enclosed in a &lt;header&gt; tag for readability. The navbar was made by having a "display: flex" div with a ul that has hidden bullet points. The position of the header was set to fixed to ensure it doesn't move with the content, and the z-index was set to 50 to allow others to use a z-index between 1 and 49 for other purposes. The navbar links have a hidden underline text-decoration that is revealed when hovered over, using the "transition" property to set a duration. If the current page is in the header, that link is given the "currentlink" class to keep it underlined constantly for clarity.
+                            <br><br>
+                            Classes were used to ensure styling wasn't repeated. Under the &lt;main&gt; tag, a "topsect" class was used to define the heading div, with the "background-size" and "background-repeat" properties used to position the background image properly. Unlike the rest of the content on the page, this div spans the full length to give it further importance. The Headings on this div have inline css to position then in a well-spaced manner. After the topsect div, "wrapper" class div is opened to define margins and padding for the main content of the site. A "mission" class div is used similarly to the "topsect" div.
+                            <br><br>
+                            Flipping cards were used to showcase the Content Pages. The "postrow" class div is set to "display: flex" and "flex-wrap: wrap" to allow flexibility in spacing. The individual posts are defined with "postfront" and "postback" divs to write the front and back of the cards. On hover, the "transform: rotateY(180deg)" css style is used to flip from the front to the back. The entire "post" div enclosed in an &lt;a&gt; tag to allow it to link to the content pages.
+                            <br><br>
+                            The footer includes key links to other pages as well as two images of the class "footerlogo" on the left and right edges. An unordered list is used to display the content pages, with each column of links enclosed in a "footertext" class div. The "::marker" pseudo-element was used to change the color of the bullet points in the footer.
+                            <br><br>
+                            A Favicon was added using the link tag with the attribute image/x-icon. To allow for responsiveness, some elements such as headings have their sizes defined in "vw" units, which is 1% of the width of the viewport.
+                            <br><br>
+                            Custom fonts were included in the files, and were defined using the "@font-face" css tag. Gradients were used in backgrounds and the header to prevent a static look, but also include a "background" property set to a static color underneath to account for browsers that do not support gradients.
+                            <br><br>
+                            Media Queries were used to add responsiveness to the site, resizing a few key font-sizes, padding values, and div sizes.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>Contrasting Colors were used between background and foreground elements to ensure readability. Alt tags were included for all images. Structural elements such as &lt;header&gt; and &lt;main&gt; were used to allow assistive technologies to better understand the structure of the page. The language of the document was defined in the &lt;html&gt; tag as well. Aside from the header, all links were given an underline to indicate that they are clickable links. The header links gain an underline when hovered over as well.</p>
+                    
+                    <h3>Link to the Validation Page</h3>
+                        <p><a href="validation_ST2.html#home">Link to the Validation Section for the Home Page</a>
+
+                    <h3>Link to the Home Page</h3>
+                        <p><a href="home.html">Link to the Home Page of the Site</a></p>
+            </section>
+
+            <section>
+                <h2 id="table">Table Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Similar to the home page, a "topsect" div is used for the heading, and the "wrapper" div contains the main content of the page. The table details the sub-targets set by the UN for SDG 14.
+                            <br><br>
+                            All Heading Row cells include a tooltip that is shown when hovered over.This is done by using &lt;span&gt; with the "tooltipcontent" class to detail the tooltip contents, and the cell contents with a "tooltipdiv" class. The opacity of the tooltip div is set to 0 by default, and set to 1 when hovered over. The z-index of the tooltip is set to 1 to ensure it is shown over the standard webpage content. The "position: relative" tag as well as "bottom: 105%" and "left: 50%" ensures it is centered and slightly above the cell.
+                            <br><br>
+                            To implement zebra striping, each table row has a class of either "tablerowA" or "tablerowB", which defines the coloring of the row.
+                            <br><br>
+                            Thumbnail images are included in the first column of every row. All images used in the table grow slightly when hovered over using the "transform: scale()" property. This was used instead of the height property to prevent other content of the table moving when the image grows.
+                            <br><br>
+                            The images in the last column of each row link to an external site where the user can learn more about each target.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>Contrasting Colors were used between background and foreground elements to ensure readability. Alt tags were included for all images. Structural elements such as &lt;header&gt; and &lt;main&gt; were used to allow assistive technologies to better understand the structure of the page. The language of the document was defined in the &lt;html&gt; tag as well. All images that are hyperlinked grow slightly on hover to indicate that it is clickable. Box-shadows are used to soften edges and increase contrast.</p>
+                    
+                    <h3>Link to the Validation Page</h3>
+                        <p><a href="validation_ST2.html#table">Link to the Validation Section for the Table Page</a>
+
+                    <h3>Link to the Table Page</h3>
+                        <p><a href="table.html">Link to the Table Page of the Site</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>A return to top button was implemented, positioning it using "position: fixed", "bottom: 0" and "right: 0". The cursor becomes a pointer when hovering over the image to indicate that it is a clickable button. While internal linking could've been used, JavaScript was used instead to implement a smooth scroll, rather than a jump to top. Further, JS was used to hide the button when the page was near the top, using the "document.body.scrollTop" value to define whether the element was given the "visible" class. This script in linked externally from script.js.
+                            <br><br>
+                            A contents pane was implemented with internal links for easy navigation within the page. Nested lists were used to structure headings and sub-headings, with the "subol" class giving sublists the "list-style-type: lower-roman" property and a reduced line height.
+                            <br><br>
+                            A class called "sidebyside" was defined to give divs the "display: flex" and "justify-content: space-between" properties, to allow for images next to sections of text. Each major section is seperated with a &lt;hr&gt; tag.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>Contrasting Colors were used between background and foreground elements to ensure readability. Alt tags were included for all images. Structural elements such as &lt;header&gt;, &lt;main&gt; &lt;h3&gt; (For main article headings) and &lt;h4&gt; (For article sub-headings) were used to allow assistive technologies to better understand the structure of the page. Each heading tag has an id to allow for internal linking. The language of the document was defined in the &lt;html&gt; tag as well. Box-shadows are used to soften edges and increase contrast for images. In order to give images a caption, the &lt;img&gt; tag is defined within a &lt;figure&gt; tag, with a &lt;figcaption&gt; tag following it for the caption.</p>
+                    
+                    <h3>Link to the Validation Page</h3>
+                        <p><a href="validation_ST2.html#content">Link to the Validation Section for the Home Page</a>
+
+                    <h3>Link to the Home Page</h3>
+                        <p><a href="content_ST2.html">Link to the Home Page of the Site</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <ul>
+                        <li>A major challenge faced was learning the process of positioning elements in the desired way. The use of divs to group elements, various position CSS properties, padding, and margins was learned.</li>
+                        <br>
+                        <li>Keeping the markup of the website readable was challenging until proper indentation and frequent commenting was used.</li>
+                        <br>
+                        <li>Understanding when to use external, internal, and inline CSS, as well as ids instead of classes, was crucial since the project was implemented with group members.</li>
+                        <br>
+                        <li>When using internal links to jump to sections of the page, the start of the content would be covered by the header. To remedy this, the scroll-padding-top property was applied to the html tag to offset the height of the header.</li>
+                        <br>
+                        <li>Header links turning purple when visited was not cohesive to the design, so the ":visited" and ":link" color was kept the same. However for footer links ":visited" links turn a light grey. Standard link colors were preserved for other links.</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>This website (as made by Student 2) does not contain any copyright infringing material, and the sources of external works are noted in the References section. <br><br>The pages do not contain any obscene, offensive, threatening, or unsolicited advertising material. <br><br>All content of this website is included for educational purposes only. <br><br>This website does not cobntain any unlawful or illegal content or code. <br><br>This website does not intend to cause direct or indirect harm to any user or organization. <br><br>All website images have been optimized for web by ensuring the resolution is at a reasonable value.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>MatthewGollop. (2014, July 14). <i>Fishing Net Plastic Bottles - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/fishing-net-plastic-bottles-rubbish-388679/">Pixabay.com.</a></li>
+                        <li>koachphillips. (2020, May 4). <i>Mangrove Cambodia Kampong - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/mangrove-cambodia-kampong-water-5121263/">Pixabay.com.</a></li>
+                        <li>izafi. (2024, June 25). <i>Fish Seller Fishmonger - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/fish-seller-fishmonger-seller-8846497/">Pixabay.com.</a></li>
+                        <li>joakant. (2014, June 27). <i>Fish Underwater Corals - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/fish-underwater-corals-sea-ocean-378286/">Pixabay.com.</a></li>
+                        <li>fotoblend. (2020, December 19). <i>Lifebuoy Fishing Supplies Security - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/lifebuoy-fishing-supplies-security-5839836/">Pixabay.com.</a></li>
+                        <li>pieonane. (2019, August 9). <i>Stingray Scuba Aquarium - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/stingray-scuba-aquarium-waterworld-4392776/">Pixabay.com.</a></li>
+                        <li>trilemedia. (2021, January 15). <i>Fisherman Lake Water - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/fisherman-lake-water-ripples-5893401/">Pixabay.com.</a></li>
+                        <li>Knoll, B. (2019, September 11). <i>Gray Turtle · Free Stock Photo.</i> <a href="https://www.pexels.com/photo/gray-turtle-2889494/">Pexels.</a></li>
+                        <li>Alvarado, J. (2023, August 31). <i>Tufted Ghost Crab on Sand · Free Stock Photo.</i>  <a href="https://www.pexels.com/photo/tufted-ghost-crab-on-sand-18113137/">Pexels.</a></li>
+                        <li>PublicDomainPictures. (2013, November 28). <i>Fish Market Food - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/fish-market-food-seafood-fresh-218887/">Pixabay.com.</a></li>
+                        <li>Y. Hiroko, (2020, March 3). <i>Photo by Y. Hiroko on Unsplash.</i> <a href="https://unsplash.com/photos/school-of-fish-in-body-of-water-9y7y26C-l4Y">Unsplash.com. </a></li>
+                        <li>TOWNER, J. (2016, August 2). <i>body of water surrounded by fog. Unsplash.com.</i> <a href="https://unsplash.com/photos/body-of-water-surrounded-by-fog-FD_sabE544U">Unsplash.com. </a></li>
+                        <li>Pexels. (2016, March 27). <i>Seals Sea Beach - Free photo on Pixabay.</i> <a href="https://pixabay.com/photos/seals-sea-beach-sand-animals-1283478/">Pixabay.com.</a></li>
+                        <li>Unsplash. (2020, February 25). <i>Photo by Francesco Ungaro on Unsplash.</i> <a href="https://unsplash.com/photos/school-of-fish-in-body-of-water-MJ1Q7hHeGlA">Unsplash.com. </a></li>
+                        <li>BananaPeels. (2022, February 4). <i>Download Sketch, Artwork, Jellyfish. Royalty-Free Stock Illustration Image.</i> <a href="https://pixabay.com/illustrations/sketch-artwork-jellyfish-sea-ocean-6987522/">Pixabay.com.</a></li>
+                        <li>United Nations. (2015) <i>SDG 14 Target Icons.</i> <a href="https://iccrom.org">ICCROM.org</a></li>
+                        <br>
+                        <li>Poppins-Regular.ttf: Copyright 2020. <i>The Poppins Project Authors. </i> <a href="https://github.com/itfoundry/Poppins">(Link)</a></li>
+                        <li>Poppins-Bold.ttf: Copyright 2020. <i>The Poppins Project Authors. </i> <a href="https://github.com/itfoundry/Poppins">(Link)</a></li>
+                        <li>PottaOne-Regular.ttf: Copyright 2020. <i>The Potta Project Authors. </i> <a href="https://github.com/go108go/Potta">(Link)</a></li>
+                    </ul>
+            </section>
+        </main>
+
+        
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        
+            <ul class="top-level-ul">
+
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#home">Home page </a></li>
+                        <li><a href="#table">Table page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <a href="/home.html"><img src="./images/LogoHorizontal.png" class="footerlogo"></a>
+            </div>
+            <div style="padding-top: 10px;">
+                <p class="footertext">Articles</p>
+                <ul>
+                    <li class="footerli">Article 1</li>
+                    <li class="footerli">Article 2</li>
+                    <li class="footerli">Article 3</li>
+                    <li class="footerli">Article 4</li>
+                </ul>
+            </div>
+            <div class="footeritems">
+                <p class="footertext">This Page's Editor</p>
+                <p class="footertext">This Page's Validation</p>
+                <p class="footertext">Sitemap</p>
+            </div>
+            <div  class="footeritems">
+                <p class="footertext">Table Item</p>
+                <p class="footertext">Meet The Team</p>
+                <p class="footertext">Feedback Form</p>
+            </div>
+            <div>
+                <img src="/images/preserve.png" class="footerlogo">
+            </div>
+            </div>
+            <div style="text-align: center;">
+                <p style="color: aliceblue; font-size: 15px; margin: 4px;">Made with 💝 by the Fishy Team</p>
+            </div>
+    
+    
+        </div>
+    </footer>
+</body>
+</html>

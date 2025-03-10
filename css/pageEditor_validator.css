@@ -7,6 +7,10 @@ body {
     background: linear-gradient(180deg, rgb(76, 104, 144) 0%, rgb(72, 72, 148) 35%, rgb(24, 60, 93) 100%);
 }
 
+html {
+    scroll-padding-top: 120px;
+}
+
 .container {
     display: flex;
     flex-direction: row-reverse;
@@ -94,7 +98,6 @@ img {
 
 
 .ref li{
-    list-style: none;
     padding-bottom: 9px;
 }
 

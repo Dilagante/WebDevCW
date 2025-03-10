@@ -47,6 +47,7 @@ html, body {
     margin-top: 40px;
     margin-bottom: 40px;
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    border-radius: 40px;
 }
 
 /*Heading 1*/
@@ -111,6 +112,7 @@ h4 {
 
 /*Top Bar of Website*/
 .header {
+    background: #172249;
     background: linear-gradient(to left, #224487, #1e3f81, #1b246a);
     height: 100px;
     overflow: hidden;
@@ -235,13 +237,11 @@ a:visited {
     border-style:groove;
     padding: 5px;
     padding-left: 30px;
-    width: 60vw;
+    max-width: fit-content;
     padding-right: 50px;
     border-radius: 20px;
     font-size: 15px;
     line-height: 30px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -273,7 +273,6 @@ table, th, td {
     padding-left: 20px;
     padding-right: 20px;
     background: #0F2027;
-    background: -webkit-linear-gradient(to right, #2c3b64, #1a3139, #0F2027);
     background: linear-gradient(to right, #172249, #192838, #0f1b27);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     box-shadow: rgba(13, 13, 43, 0.4) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -295,6 +294,11 @@ table, th, td {
 /*Size for footer sub-links*/
 .footerli {
     font-size: 15px;
+}
+
+/*Change Bullet Point Color*/
+.footerli::marker {
+    color: white;
 }
 
 /*Coloring for Links in Footer*/
@@ -345,7 +349,4 @@ table, th, td {
         font-size: 12px;
     }
 
-    .contents{
-        width: 90%;
-    }
   }
