@@ -17,7 +17,7 @@
 
         }
 
-        /*Bold Font Face for H1*/
+        /*Bold Font Face for H2*/
         @font-face {
             font-family: Poppins;
             src: url(./fonts/Poppins-Bold.ttf);
@@ -206,7 +206,7 @@
 </head>
 <body>
 
-    <img id="totop" src="./images/totop.png" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+    <img id="totop" src="./images/totop.png" alt="Up Arrow" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
     
     <!--Header-->
     <header>
@@ -241,7 +241,7 @@
             <section>
                 <h2 id="homeVal">Home Page Validation Report</h2>
                     <p>In the Header, the profile icon was added before closing the &lt;ol&gt; of the navbar. This was changed as &lt;img&gt; cannot be a child element of &lt;ol&gt;</p> 
-                    <img src="validationSnapshots/validation_home.png" style="width: 100%;">
+                    <img src="validationSnapshots/validation_home.png" alt="Screenshot of Validation for the Home Page with no errors" style="width: 100%;">
                                     
                 <h3>Back to Page Editor</h3>
                     <p><a href="pageEditor_ST2.html#home">Go back to the Home Editor Page</a></p>
@@ -251,7 +251,7 @@
             <section>
                 <h2 id="tableVal">Table Page Validation Report</h2>
                 <p>Previously there was a stray end &lt;div&gt; tag as well as a stray &lt;p&gt; tag. This has been fixed.</p>
-                    <img src="validationSnapshots/validation_table.png" style="width: 100%;">
+                    <img src="validationSnapshots/validation_table.png" alt="Screenshot of Validation for the Table Page with no errors" style="width: 100%;">
                                     
                 <h3>Back to Page Editor</h3>
                     <p><a href="pageEditor_ST2.html#table">Go back to the Table Editor Page</a></p>
@@ -261,7 +261,7 @@
             <section>
                 <h2 id="contentVal">Content Page Validation Report</h2>
                 <p>Initially, while implementing sub-lists, the second &lt;ol&gt; tag was opened after closing the &lt;li&gt; tag. This was changed as &lt;ol&gt; cannot be a child element of &lt;ol&gt;</p>
-                    <img src="validationSnapshots/validation_contentST2.png" style="width: 100%;">
+                    <img src="validationSnapshots/validation_contentST2.png" alt="Screenshot of Validation for the Content Page with no errors" style="width: 100%;">
                                     
                 <h3>Back to Page Editor</h3>
                     <p><a href="pageEditor_ST2.html#content">Go back to the Content Editor Page</a></p>

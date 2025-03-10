@@ -82,9 +82,12 @@
                 }
             }
         </style>
+        <!--Script for smooth return-to-top and button opacity based on position-->
+        <script src="./script.js"></script>
 
     </head>
     <body>
+
         <!--Header-->
         <header>
             <div class="header">
@@ -104,6 +107,10 @@
                 </div>
             </div>
         </header>
+
+        <!--Scroll to Top Button-->
+        <img id="totop" alt="Arrow Pointing Up" src="./images/totop.png" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+
 
         <main>
             <!--Heading Section-->
